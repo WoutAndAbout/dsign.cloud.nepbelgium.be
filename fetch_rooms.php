@@ -11,7 +11,7 @@ if (!isset($_GET['api_key']) || $_GET['api_key'] !== $apiKey) {
 }
 
 $current_date = strtotime('now');
-$url = 'https://nepbelgium.digital/teosAPI/today.php?user_id=dashboard&password=uXOpj56Uoy1Yllg1yO5nVOBqzd6K4fyt7kTwqnDjE5UEapKgns';
+$url = 'https://dsign.cloud.nepbelgium.be/today.php?user_id=dashboard&password=uXOpj56Uoy1Yllg1yO5nVOBqzd6K4fyt7kTwqnDjE5UEapKgns';
 $nonEmptyOnly = false;
 // Vérification du paramètre GET `date`
 if (isset($_GET['date'])) {

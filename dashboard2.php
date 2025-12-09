@@ -29,7 +29,7 @@ if ($isTomorrow) {
     $hasDate = isset($_GET['date']);
     $title = "Tomorrow's Events";
     $date = date('Ymd', strtotime('+1 day'));
-    $apiUrl = 'https://nepbelgium.digital/teosAPI/fetch_rooms.php?api_key=xLrMCpR7uE2i6UI1kxeG65d9IIxxnckYvRZuk2hi161GXz1u4U&allEvents=yes&date=' . $date;
+    $apiUrl = 'https://dsign.cloud.nepbelgium.be/fetch_rooms.php?api_key=xLrMCpR7uE2i6UI1kxeG65d9IIxxnckYvRZuk2hi161GXz1u4U&allEvents=yes&date=' . $date;
     $dayToShow = strtotime('+1 day');
 
     while (true) {
@@ -54,7 +54,7 @@ if ($isTomorrow) {
         if (date('N', $dayToShow) == 6) {
             $dayToShow = strtotime('+1 day', $dayToShow);
             $date = date('Ymd', $dayToShow);
-            $apiUrl = 'https://nepbelgium.digital/teosAPI/fetch_rooms.php?api_key=xLrMCpR7uE2i6UI1kxeG65d9IIxxnckYvRZuk2hi161GXz1u4U&allEvents=yes&date=' . $date;
+            $apiUrl = 'https://dsign.cloud.nepbelgium.be/fetch_rooms.php?api_key=xLrMCpR7uE2i6UI1kxeG65d9IIxxnckYvRZuk2hi161GXz1u4U&allEvents=yes&date=' . $date;
             continue;
         }
 
@@ -62,7 +62,7 @@ if ($isTomorrow) {
         if (date('N', $dayToShow) == 7) {
             $dayToShow = strtotime('next Monday');
             $date = date('Ymd', $dayToShow);
-            $apiUrl = 'https://nepbelgium.digital/teosAPI/fetch_rooms.php?api_key=xLrMCpR7uE2i6UI1kxeG65d9IIxxnckYvRZuk2hi161GXz1u4U&allEvents=yes&date=' . $date;
+            $apiUrl = 'https://dsign.cloud.nepbelgium.be/fetch_rooms.php?api_key=xLrMCpR7uE2i6UI1kxeG65d9IIxxnckYvRZuk2hi161GXz1u4U&allEvents=yes&date=' . $date;
             continue;
         }
 
@@ -74,10 +74,10 @@ if ($isTomorrow) {
     $hasDate = isset($_GET['date']);
     $dayToShow = strtotime($_GET['date']);
     $title = date('d/m/Y \E\v\e\n\t\s', $dayToShow);
-    $apiUrl = 'https://nepbelgium.digital/teosAPI/fetch_rooms.php?api_key=xLrMCpR7uE2i6UI1kxeG65d9IIxxnckYvRZuk2hi161GXz1u4U&allEvents=yes&date=' . $_GET['date'];
+    $apiUrl = 'https://dsign.cloud.nepbelgium.be/fetch_rooms.php?api_key=xLrMCpR7uE2i6UI1kxeG65d9IIxxnckYvRZuk2hi161GXz1u4U&allEvents=yes&date=' . $_GET['date'];
 } else {
     $hasDate = isset($_GET['date']);
-    $apiUrl = 'https://nepbelgium.digital/teosAPI/fetch_rooms.php?api_key=xLrMCpR7uE2i6UI1kxeG65d9IIxxnckYvRZuk2hi161GXz1u4U&allEvents=yes';
+    $apiUrl = 'https://dsign.cloud.nepbelgium.be/fetch_rooms.php?api_key=xLrMCpR7uE2i6UI1kxeG65d9IIxxnckYvRZuk2hi161GXz1u4U&allEvents=yes';
 }
 
 // Récupération du contenu JSON
