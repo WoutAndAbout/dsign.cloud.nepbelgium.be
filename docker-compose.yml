@@ -13,7 +13,7 @@ services:
       - 9000
     # Map your current directory (your website files) into the container
     volumes:
-      - .:/var/www/html
+      - /data/coolify/applications/a0kgwssg8o4gs08s4s4s0wkg/data/var/www/html:/var/www/html
     # Restart the service if it fails
     restart: always
 
